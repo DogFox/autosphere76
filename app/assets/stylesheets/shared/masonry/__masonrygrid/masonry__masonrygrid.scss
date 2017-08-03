@@ -1,0 +1,11 @@
+.masonry__masonrygrid {
+
+    background: #EEE;
+  }
+
+  /* clearfix */
+  .masonry__masonrygrid:after {
+    content: '';
+    display: block;
+    clear: both;
+}

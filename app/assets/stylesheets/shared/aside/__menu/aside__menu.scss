@@ -1,0 +1,13 @@
+.aside__menu {
+  background-color: #4a4e59;
+  border: 1px;
+  box-sizing: border-box;
+  height: calc( 100% - 400px );
+  width: 100%;
+  display: flex;
+  flex-direction: column ;
+  padding-top: 25px;
+}
+.aside__menu:hover{
+  color: #B00100;
+}

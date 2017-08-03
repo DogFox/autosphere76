@@ -1,0 +1,11 @@
+.header {
+  height: 100px;
+  width: calc( 100% - 400px );
+  background-color: #ffffff;
+  float: left;
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  text-align: center;
+}

@@ -1,0 +1,19 @@
+.logo__logo_link {
+  text-align: -webkit-match-parent;
+  height: 50px;
+  background-color: #9dcdfe;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  font-family: "DinCond";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.logo__logo_link:hover{
+  background-color: #2E2F30;
+  transition: .5s;
+}
