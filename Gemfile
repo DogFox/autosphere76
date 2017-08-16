@@ -19,6 +19,8 @@ gem 'bem'
 gem 'high_voltage'
 gem 'slim-rails'
 gem 'masonry-rails'
+gem 'pg', '0.15.1'
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -42,11 +44,9 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
-  gem 'sqlite3'
 
 end
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
