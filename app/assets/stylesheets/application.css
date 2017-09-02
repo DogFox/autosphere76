@@ -20,3 +20,9 @@
  *= require 'masonry/right-to-left'
  *= require 'masonry/transitions'
  */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
