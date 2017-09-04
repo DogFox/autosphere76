@@ -1,0 +1,30 @@
+.main__icon {
+  width: 150px;
+  margin: auto;
+
+  display: block;
+  fill: none;
+  stroke: #9dcdfe;
+  stroke-width: 3;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+
+  animation-name: draw;
+  animation-duration: 5s;
+  animation-fill-mode: forwards; // Stay on the last frame
+  animation-iteration-count: 1; // Run only once
+  animation-timing-function: linear;
+
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+
+  }
+}
+.main__icon:hover {
+  stroke: red;
+  stroke-width: 10;
+  transition: .5s;
+
+}
