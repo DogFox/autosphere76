@@ -20,6 +20,7 @@ gem 'high_voltage'
 gem 'slim-rails'
 gem 'masonry-rails'
 gem 'pg' , '~> 0.21.0'
+gem 'inline_svg'
 
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
