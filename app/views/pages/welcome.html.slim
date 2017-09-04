@@ -1,42 +1,47 @@
-.masonry__masonrygrid
-
+.page
   = render "shared/aside"
 
   = render "shared/header"
 
   .main
     .masonry__masonrygrid
-      .masonry__masonry-brick
+      .masonry__logo_brick
         a href="#"
-          = image_tag 'logoavto2.png', :class => 'b-logo__img'
+          = image_tag 'logo_main.png'
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'bs_warning.png', :class => 'b-logo__img'
+         a.main__icon href="#"
+           = inline_svg "parking.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'ce_war.png', :class => 'b-logo__img'
+         a.main__icon href="#"
+           = inline_svg "car-lights.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'do_war.png', :class => 'b-logo__img'
+         a.main__icon href="#"
+           = inline_svg "break.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'eng_war.png', :class => 'b-logo__img'
+         a.main__icon href="#"
+           = inline_svg "damper.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'light_war.png', :class => 'b-logo__img'
+         a.main__icon href="#"
+           = inline_svg "temperature.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'fuel_war.png', :class => 'b-logo__img'
+        a.main__icon href="#"
+          = inline_svg "oil.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'oil_war.png', :class => 'b-logo__img'
+        a.main__icon href="#"
+          = inline_svg "engine.svg"
+
       .masonry__masonry-brick
-        a href="#"
-          = image_tag 'war_war.png', :class => 'b-logo__img'
-      .masonry__masonry-brick
-        a href="#"
-          = image_tag 'ac_war.png', :class => 'b-logo__img'
-      .masonry__masonry-brick
-        iframe width="1600" height="300" frameborder="0" style="border:0" src= "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2138.7660952626034!2d39.85733006265868!3d57.584444114219394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504294857733"
+        a.main__icon href="#"
+          = inline_svg "lamps.svg"
+
+      .masonry__maps_brick
+        iframe width="100%" height="300" frameborder="0" style="border:0" src= "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2138.7660952626034!2d39.85733006265868!3d57.584444114219394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1504294857733"
 
   = render "shared/footer"

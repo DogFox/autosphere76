@@ -1,5 +1,11 @@
 .masonry__masonrygrid {
 
+  background: image_url("mainback.png");
+  overflow: hidden;;
+  background-size: initial;
+  background-repeat: repeat;
+  background-size: 100% auto;
+
   }
 
   /* clearfix */
