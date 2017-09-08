@@ -1,14 +1,7 @@
 .header
-  .header__workhour
-    .header__text
-      | АДРЕС
-    .header__text
-      | пн-пт: 09:00-19:00; сб: 9:00-17:00; вс: выходной
-    .header__text
-      | 8-(4852)-230870
-  .header__search
-    .header__text
-      | ПОИСК
-  .header__lk
-    .header__text
-      | ЛИЧНЫЙ КАБИНЕТ
+  - if user_signed_in?
+    span Здравствуйте,  = current_user.email
+    = link_to 'Выйти', destroy_user_session_path, :method => :delete
+  - else
+    = link_to 'Войти', new_user_session_path
+    = link_to 'Зарегистрироваться', new_user_registration_path

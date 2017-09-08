@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'persons/profile'
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   root  'pages#welcome'
   get '/home'      => 'pages#welcome'
@@ -10,5 +13,7 @@ Rails.application.routes.draw do
   get '/projects'  => 'pages#projects'
   get '/careers'   => 'pages#careers'
   get '/contacts'  => 'pages#contacts'
+  
+  get 'persons/profile', as: 'user_root'
 
 end
